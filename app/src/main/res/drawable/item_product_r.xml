@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"
+    app:strokeWidth="0.5dp"
+    app:strokeColor="@color/md_theme_outlineVariant"
+    app:cardBackgroundColor="@color/md_theme_surface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Image Container with background -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/md_theme_surfaceVariant">
+
+            <ImageView
+                android:id="@+id/item_product_r_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:contentDescription="Product Image" />
+
+            <!-- Optional: Top badge (e.g. "New") — hide in code if not needed -->
+            <TextView
+                android:id="@+id/item_product_r_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_gravity="top|start"
+                android:text="New"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@color/md_theme_onPrimary"
+                android:background="@drawable/bg_product_badge"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <!-- Text content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Product Name -->
+            <TextView
+                android:id="@+id/item_product_r_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textSize="13sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/md_theme_onSurface" />
+
+            <!-- Rating Stars -->
+            <RatingBar
+                android:id="@+id/item_product_r_rating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:rating="4.0"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:progressTint="@color/md_theme_primary" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/md_theme_outlineVariant" />
+
+            <!-- Product Price -->
+            <TextView
+                android:id="@+id/item_product_r_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LKR 0.00"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/md_theme_primary" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

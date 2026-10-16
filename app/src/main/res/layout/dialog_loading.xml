@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="?attr/colorSurfaceContainerHighest"
+    app:cardCornerRadius="28dp"
+    app:cardElevation="8dp"
+    app:strokeColor="?attr/colorOutlineVariant"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="32dp">
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progressIndicator"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:indeterminate="true"
+            app:indicatorColor="?attr/colorPrimary"
+            app:indicatorSize="56dp"
+            app:trackColor="?attr/colorSurfaceVariant"
+            app:trackThickness="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Please wait"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:textColor="?attr/colorOnSurface" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Processing your request"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="?attr/colorOnSurfaceVariant" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/dot1"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/dot_primary" />
+
+            <View
+                android:id="@+id/dot2"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/dot_primary" />
+
+            <View
+                android:id="@+id/dot3"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/dot_primary" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

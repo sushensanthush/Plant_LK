@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PlantLK</string>
+
+    <string name="app_slogan">එක් ශාකයකින් ලංකාව කොළ කරමු</string>
+    <string name="app_version">අනුවාදය 1.1.3</string>
+    <string name="app_company">PlantLK (පෞද්ගලික) සමාගම</string>
+
+    <string name="search_hint">සොයන්න...</string>
+    <string name="login_title">පිවිසෙන්න</string>
+    <string name="signup_title">ගිණුමක් සාදන්න</string>
+    <string name="text_sign_in">පිවිසෙන්න</string>
+    <string name="text_sign_up">ලියාපදිංචි වන්න</string>
+    <string name="forgot_password">මුරපදය අමතකද?</string>
+    <string name="text_create_account">ගිණුමක් නැද්ද?</string>
+    <string name="text_signin_account">දැනටමත් ගිණුමක් තිබේද?</string>
+    <string name="text_password_message">අවම අකුරු 6ක් අවශ්‍යයි</string>
+
+
+    <string name="splash_background">පසුබිම</string>
+
+    <string name="open_drawer">මෙනු විවෘත කරන්න</string>
+    <string name="close_drawer">මෙනු වසන්න</string>
+
+    <string name="side_nav_home_title">මුල් පිටුව</string>
+    <string name="side_nav_profile_title">පැතිකඩ</string>
+    <string name="side_nav_orders_title">මගේ ඇණවුම්</string>
+    <string name="side_nav_wishlist_title">කැමති ලැයිස්තුව</string>
+    <string name="side_nav_cart_title">කූඩය</string>
+    <string name="side_nav_care_title">ශාක රැකවරණය</string>
+    <string name="side_nav_contact_support_title">සහාය අමතන්න</string>
+    <string name="side_nav_nurseries_title">ශාඛා</string>
+    <string name="side_nav_settings_title">සැකසුම්</string>
+    <string name="side_nav_login_title">පිවිසෙන්න</string>
+    <string name="side_nav_logout_title">ඉවත් වන්න</string>
+</resources>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:context=".fragment.NurseryMapFragment">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nursery_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/md_theme_surface"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/search_24px"
+                app:tint="@color/md_theme_onSurfaceVariant" />
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Search nurseries…"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/md_theme_onSurface"
+                android:textColorHint="@color/md_theme_onSurfaceVariant"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/btn_filter"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/filter_alt_24px"
+                app:tint="@color/md_theme_primary" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_count_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/md_theme_primaryContainer"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="14dp">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/black_logo"
+                app:tint="@color/md_theme_onPrimaryContainer" />
+
+            <TextView
+                android:id="@+id/tv_nursery_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="0 Nurseries"
+                android:textColor="@color/md_theme_onPrimaryContainer"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="100dp"
+        app:cardBackgroundColor="@color/md_theme_surface"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="6dp"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_zoom_in"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Zoom In"
+                android:padding="8dp"
+                android:src="@drawable/add_24px"
+                app:tint="@color/md_theme_primary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/md_theme_outlineVariant" />
+
+            <ImageButton
+                android:id="@+id/btn_zoom_out"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Zoom Out"
+                android:padding="8dp"
+                android:src="@drawable/remove_24px"
+                app:tint="@color/md_theme_primary" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_my_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/nearby_24px"
+        app:backgroundTint="@color/md_theme_surface"
+        app:elevation="6dp"
+        app:fabSize="mini"
+        app:maxImageSize="20dp"
+        app:tint="@color/md_theme_primary" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/nursery_drawer"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:elevation="30dp"
+        android:translationX="-300dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/md_theme_surface"
+        app:cardCornerRadius="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@color/md_theme_primaryContainer"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/black_logo"
+                    app:tint="@color/md_theme_onPrimaryContainer" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:text="Nearby Nurseries"
+                    android:textColor="@color/md_theme_onPrimaryContainer"
+                    android:textSize="16sp" />
+
+                <ImageButton
+                    android:id="@+id/btn_drawer_close"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/cancel_24px"
+                    app:tint="@color/md_theme_onPrimaryContainer" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_nurseries"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_sheet_nursery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_bottom_sheet"
+        android:elevation="16dp"
+        android:paddingBottom="32dp"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/drag_handle"
+            android:layout_width="40dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_drag_handle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_nursery_icon"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_icon_circle"
+            android:padding="14dp"
+            android:src="@drawable/black_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/drag_handle"
+            app:tint="@color/md_theme_primary" />
+
+        <TextView
+            android:id="@+id/tv_sheet_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="56dp"
+            android:text="Nursery Name"
+            android:textColor="@color/md_theme_onSurface"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_nursery_icon"
+            app:layout_constraintTop_toBottomOf="@id/drag_handle" />
+
+        <TextView
+            android:id="@+id/tv_sheet_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:text="Plant Nursery"
+            android:textColor="@color/md_theme_primary"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/iv_nursery_icon"
+            app:layout_constraintTop_toBottomOf="@id/tv_sheet_name" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/md_theme_outlineVariant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_nursery_icon" />
+
+        <LinearLayout
+            android:id="@+id/ll_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingVertical="5dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/add_location_24px"
+                    app:tint="@color/md_theme_onSurfaceVariant" />
+
+                <TextView
+                    android:id="@+id/tv_sheet_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Address"
+                    android:textColor="@color/md_theme_onSurfaceVariant"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingVertical="5dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/schedule_24px"
+                    app:tint="@color/md_theme_onSurfaceVariant" />
+
+                <TextView
+                    android:id="@+id/tv_sheet_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Hours"
+                    android:textColor="@color/md_theme_tertiary"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingVertical="5dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/call_24px"
+                    app:tint="@color/md_theme_onSurfaceVariant" />
+
+                <TextView
+                    android:id="@+id/tv_sheet_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Phone"
+                    android:textColor="@color/md_theme_onSurfaceVariant"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingVertical="5dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/directions_walk_24px"
+                    app:tint="@color/md_theme_onSurfaceVariant" />
+
+                <TextView
+                    android:id="@+id/tv_sheet_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Distance"
+                    android:textColor="@color/md_theme_onSurfaceVariant"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_info">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_sheet_route"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Get Route"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/nearby_24px" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_sheet_call"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Call"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/call_24px" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_sheet_close"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_icon_circle"
+            android:padding="8dp"
+            android:src="@drawable/cancel_24px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/md_theme_onSurfaceVariant" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

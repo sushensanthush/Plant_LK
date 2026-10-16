@@ -1,0 +1,15 @@
+# Copy this file to local.properties and fill in your own values.
+# local.properties is git-ignored; never commit it.
+
+# Android SDK location (Android Studio normally writes this line for you)
+# sdk.dir=/path/to/Android/Sdk
+
+# Google Maps SDK for Android key (injected into the manifest and BuildConfig)
+MAPS_API_KEY=your_maps_api_key
+
+# Google Directions API key (can be the same key if both APIs are enabled on it)
+DIRECTIONS_API_KEY=your_directions_api_key
+
+# PayHere sandbox merchant credentials (https://sandbox.payhere.lk)
+PAYHERE_MERCHANT_ID=your_payhere_merchant_id
+PAYHERE_MERCHANT_SECRET=your_payhere_merchant_secret

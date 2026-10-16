@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PlantLK</string>
+    <string name="app_slogan">Lanka mit einer Pflanze grüner machen</string>
+    <string name="app_version">Version 1.1.3</string>
+    <string name="app_company">PlantLK GmbH</string>
+
+    <string name="search_hint">Suchen...</string>
+    <string name="login_title">Anmelden</string>
+    <string name="signup_title">Konto erstellen</string>
+    <string name="text_sign_in">Anmelden</string>
+    <string name="text_sign_up">Registrieren</string>
+    <string name="forgot_password">Passwort vergessen?</string>
+    <string name="text_create_account">Noch kein Konto?</string>
+    <string name="text_signin_account">Bereits ein Konto?</string>
+    <string name="text_password_message">Mindestens 6 Zeichen</string>
+
+
+    <string name="splash_background">Hintergrund</string>
+
+    <string name="open_drawer">Menü öffnen</string>
+    <string name="close_drawer">Menü schließen</string>
+
+    <string name="side_nav_home_title">Startseite</string>
+    <string name="side_nav_profile_title">Profil</string>
+    <string name="side_nav_orders_title">Bestellungen</string>
+    <string name="side_nav_wishlist_title">Wunschliste</string>
+    <string name="side_nav_cart_title">Warenkorb</string>
+    <string name="side_nav_care_title">Pflanzenpflege</string>
+    <string name="side_nav_contact_support_title">Kontakt</string>
+    <string name="side_nav_nurseries_title">Baumschulen</string>
+    <string name="side_nav_settings_title">Einstellungen</string>
+    <string name="side_nav_login_title">Anmelden</string>
+    <string name="side_nav_logout_title">Abmelden</string>
+</resources>

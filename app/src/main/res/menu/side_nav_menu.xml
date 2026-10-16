@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/side_nav_group_main"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/side_nav_home"
+            android:checkable="true"
+            android:icon="@drawable/home_24px"
+            android:title="@string/side_nav_home_title"
+
+            />
+        <item
+            android:id="@+id/side_nav_profile"
+            android:checkable="true"
+            android:icon="@drawable/profile_24px"
+            android:title="@string/side_nav_profile_title"
+            android:visible="false"
+
+            />
+        <item
+            android:id="@+id/side_nav_orders"
+            android:checkable="true"
+            android:icon="@drawable/orders_24px"
+            android:title="@string/side_nav_orders_title"
+            android:visible="false"
+
+            />
+        <item
+            android:id="@+id/side_nav_wishlist"
+            android:checkable="true"
+            android:icon="@drawable/wishlist_24px"
+            android:title="@string/side_nav_wishlist_title"
+            android:visible="false"
+
+            />
+        <item
+            android:id="@+id/side_nav_cart"
+            android:checkable="true"
+            android:icon="@drawable/cart_24px"
+            android:title="@string/side_nav_cart_title"
+            android:visible="false"
+
+            />
+        <item
+            android:id="@+id/side_nav_care"
+            android:checkable="true"
+            android:icon="@drawable/care_24px"
+            android:title="@string/side_nav_care_title"
+            android:visible="true"
+
+            />
+        <item
+            android:id="@+id/side_nav_contact_support"
+            android:checkable="true"
+            android:icon="@drawable/contact_support_24px"
+            android:title="@string/side_nav_contact_support_title"
+            android:visible="true"
+
+            />
+        <item
+            android:id="@+id/side_nav_nurseries"
+            android:checkable="true"
+            android:icon="@drawable/nearby_24px"
+            android:title="@string/side_nav_nurseries_title"
+            android:visible="true"
+
+            />
+        <item
+            android:id="@+id/side_nav_settings"
+            android:checkable="true"
+            android:icon="@drawable/settings_24px"
+            android:title="@string/side_nav_settings_title"
+            android:visible="true"
+
+            />
+    </group>
+
+    <group android:id="@+id/side_nav_group_auth">
+        <item
+            android:id="@+id/side_nav_login"
+            android:icon="@drawable/login_24px"
+            android:title="@string/side_nav_login_title"
+            android:visible="true" />
+        <item
+            android:id="@+id/side_nav_logout"
+            android:icon="@drawable/logout_24px"
+            android:title="@string/side_nav_logout_title"
+            android:visible="false" />
+    </group>
+
+</menu>

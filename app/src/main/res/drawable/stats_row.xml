@@ -1,0 +1,94 @@
+<!-- Stats row -->
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="16dp"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/bg_avb_badge"
+        android:padding="12dp"
+        android:layout_marginEnd="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500+"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/md_theme_primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Plants"
+            android:textSize="11sp"
+            android:textColor="@color/md_theme_onPrimaryContainer" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/bg_avb_badge"
+        android:backgroundTint="@color/md_theme_secondaryContainer"
+        android:padding="12dp"
+        android:layout_marginEnd="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50+"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/md_theme_secondary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Nurseries"
+            android:textSize="11sp"
+            android:textColor="@color/md_theme_onSecondaryContainer" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/bg_avb_badge"
+        android:backgroundTint="@color/md_theme_tertiaryContainer"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10K+"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/md_theme_tertiary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Customers"
+            android:textSize="11sp"
+            android:textColor="@color/md_theme_onTertiaryContainer" />
+
+    </LinearLayout>
+
+</LinearLayout>

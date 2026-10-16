@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PlantLK</string>
+    <string name="app_slogan">Lanka vihreämpi yhdellä kasvilla kerrallaan</string>
+    <string name="app_version">Versio 1.1.3</string>
+    <string name="app_company">PlantLK Oy</string>
+
+    <string name="search_hint">Hae...</string>
+    <string name="login_title">Kirjaudu sisään</string>
+    <string name="signup_title">Luo tili</string>
+    <string name="text_sign_in">Kirjaudu sisään</string>
+    <string name="text_sign_up">Rekisteröidy</string>
+    <string name="forgot_password">Unohditko salasanasi?</string>
+    <string name="text_create_account">Eikö sinulla ole tiliä?</string>
+    <string name="text_signin_account">Onko sinulla jo tili?</string>
+    <string name="text_password_message">Vähintään 6 merkkiä</string>
+
+
+    <string name="splash_background">Tausta</string>
+
+    <string name="open_drawer">Avaa valikko</string>
+    <string name="close_drawer">Sulje valikko</string>
+
+    <string name="side_nav_home_title">Koti</string>
+    <string name="side_nav_profile_title">Profiili</string>
+    <string name="side_nav_orders_title">Tilaukset</string>
+    <string name="side_nav_wishlist_title">Toivelista</string>
+    <string name="side_nav_cart_title">Ostoskori</string>
+    <string name="side_nav_care_title">Kasvinhoito</string>
+    <string name="side_nav_contact_support_title">Ota yhteyttä</string>
+    <string name="side_nav_nurseries_title">Taimiistutukset</string>
+    <string name="side_nav_settings_title">Asetukset</string>
+    <string name="side_nav_login_title">Kirjaudu sisään</string>
+    <string name="side_nav_logout_title">Kirjaudu ulos</string>
+</resources>

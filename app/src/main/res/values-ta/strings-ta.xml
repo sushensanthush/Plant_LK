@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PlantLK</string>
+    <string name="app_slogan">ஒரு செடியால் இலங்கையை பசுமையாக்குவோம்</string>
+    <string name="app_version">பதிப்பு 1.1.3</string>
+    <string name="app_company">PlantLK (தனியார்) நிறுவனம்</string>
+
+    <string name="search_hint">தேடு...</string>
+    <string name="login_title">உள்நுழைக</string>
+    <string name="signup_title">கணக்கு உருவாக்கு</string>
+    <string name="text_sign_in">உள்நுழைக</string>
+    <string name="text_sign_up">பதிவு செய்க</string>
+    <string name="forgot_password">கடவுச்சொல் மறந்துவிட்டதா?</string>
+    <string name="text_create_account">கணக்கு இல்லையா?</string>
+    <string name="text_signin_account">ஏற்கனவே கணக்கு உள்ளதா?</string>
+    <string name="text_password_message">குறைந்தது 6 எழுத்துகள் தேவை</string>
+
+
+    <string name="splash_background">பின்னணி</string>
+
+    <string name="open_drawer">மெனு திற</string>
+    <string name="close_drawer">மெனு மூடு</string>
+
+    <string name="side_nav_home_title">முகப்பு</string>
+
+    <string name="side_nav_profile_title">சுயவிவரம்</string>
+    <string name="side_nav_orders_title">என் ஆர்டர்கள்</string>
+    <string name="side_nav_wishlist_title">விருப்பப் பட்டியல்</string>
+    <string name="side_nav_cart_title">கார்ட்</string>
+    <string name="side_nav_care_title">தாவர பராமரிப்பு</string>
+    <string name="side_nav_contact_support_title">ஆதரவை தொடர்பு கொள்</string>
+    <string name="side_nav_nurseries_title">நாற்றங்கால்</string>
+    <string name="side_nav_settings_title">அமைப்புகள்</string>
+    <string name="side_nav_login_title">உள்நுழைக</string>
+    <string name="side_nav_logout_title">வெளியேறு</string>
+</resources>
