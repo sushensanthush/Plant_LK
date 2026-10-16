@@ -53,8 +53,6 @@
 
 Plant buying in Sri Lanka still relies largely on physical markets and nurseries. Customers have no single place to discover plant varieties, compare prices, find nearby nurseries, and pay online. Plant.LK addresses this with a dedicated mobile marketplace that combines a browsable product catalogue, nursery discovery with in-app navigation, secure online payment, and order tracking, backed by a Firebase cloud back end and a web-based admin dashboard.
 
-The project was developed as the assessed project for **Handheld Device Programming II** (Birmingham City University BSc (Hons) Software Engineering Top-Up, delivered by the Java Institute for Advanced Technology).
-
 | | |
 |---|---|
 | **Application ID** | `lk.susa.plant_lk` |
@@ -405,18 +403,14 @@ English, Sinhala, Tamil, Finnish, German, Chinese (Simplified), and Japanese.
 
 ## Author
 
-**Sushen Santhush Nilaweera**
-Software Engineering undergraduate, Birmingham City University (Java Institute for Advanced Technology, Sri Lanka)
+**Sushen Santhush**
+Full Software Engineering undergraduate, Birmingham City University 
 
 - GitHub: [github.com/sushensanthush](https://github.com/sushensanthush)
 - LinkedIn: [linkedin.com/in/sushensanthush](https://www.linkedin.com/in/sushensanthush)
 
-### Acknowledgements
-
-Thanks to the lecturers and the Java Institute for Advanced Technology, to Birmingham City University for the academic framework, and to the volunteer testers who gave feedback. This project builds on the Firebase, Android Studio, Google Maps Platform, Glide, and PayHere tooling and documentation.
-
 ---
 
 <div align="center">
-<sub>Plant.LK &copy; 2026. Developed as an academic project.</sub>
+<sub>Plant.LK &copy; 2026. Developed as a personal project.</sub>
 </div>
